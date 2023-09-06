@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+        <!-- header  -->
+        <div class="header">
+                <!-- <div class="menu-toggle">
+                    <label for="">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div> -->
+                <div class="logo">
+                    <img src="grow4techlogo1.jpg" alt="logo">
+                </div>
+                <div class="search-container">
+                                    <div class="search-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <input type="text" id="search" placeholder="Search...">
+                </div>
+                <div class="header-icons">
+                    <!-- <span class="fa-solid fa-magnifying-glass"></span>
+                     -->
+                     
+                    <div class="fa-solid fa-cart-shopping"></div>
+                    <div class="fa-solid fa-bell"></div>
+                    <div class="fa-solid fa-circle-user"></div>
+                </div>
+        </div>
+            <!-- sidebar menu for desktop and tablet -->
+        <div class="sidebar">
+
+            <div class="sidebar-brand">
+                    <!-- <img src="icons/user-solid.svg" alt="" width="40px"> -->
+
+                    <div class="brand-icons">
+                        <i class="fa-regular fa-pen-to-square"></i>
+
+                    </div>        
+            </div>
+
+        
+            <div class="sidebar-main">
+                <div class="sidebar-user">
+                    <!-- <img src="icons/user-solid.svg" alt="" width="30px"> -->
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div>
+                        <h3>John Doe</h3>
+                        <span>johndoe@gmail.com</span>
+                    </div>
+                </div>
+
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="fa-solid fa-house item"></span>
+                                <span class="sidebar-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-solid fa-graduation-cap item"></span>
+                                <span class="sidebar-text">Courses</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">
+                                <span class="fa-regular fa-calendar-days item"></span>
+                                <span class="sidebar-text">Calendar</span>
+                            </a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">
+                                <span class="fa-solid fa-file-arrow-down"></span>
+                                Materials
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="#">
+                                <!-- <span class="fa-regular fa-comment-dots>"></span> -->
+                                <span class="fa-regular fa-comment-dots item"></span>
+                                <span class="sidebar-text">Forum</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-solid fa-gear"></span>
+                                <span class="sidebar-text">Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-solid fa-right-from-bracket"></span>
+                                <span class="sidebar-text">Log Out</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="more">
+                                <span class="fa-solid fa-ellipsis item"></span>
+                                More
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom navbar menu for mobile -->
+        <nav class="bottom-navbar">
+            <a href="#" class="nav-link ">
+                <i class="material-icons nav-icon"> home</i>
+                <span class="nav-text"> Dashboard</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="material-icons nav-icon">school </i>
+                <span class="nav-text">Courses</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons nav-icon"> chat </i>
+                <span class="nav-text"> Forum </span>
+            </a>            
+            
+            <a href="#" class="nav-link">
+                <i class="material-icons nav-icon"> settings</i>
+                <span class="nav-text">Settings</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="material-icons nav-icon">logout</i> 
+                <span class="nav-text"> Log Out</span>
+            </a>
+    </nav>
+
+        <div class="grid-container">
+            <!-- hello user grid item  -->
+            <div class="grid-item hello-user">
+                        <h1><i class="fa-solid fa-hand"></i>Hello User! Welcome to your dashboard.</h1>
+            </div>
+
+            <!-- courses in progress grid item  -->
+            <div class="grid-item courses-in-progress">
+                    <h3 class="heading">Continue Learning <i class="fa-solid fa-arrow-trend-down"></i></h3>
+                    <div class="course-box">
+                        <div class="course-card">
+                            <div class="course-logo">
+                                <img src="webdev.jpeg" alt=""></div>
+                            <div class="course-content">
+                                <h5>Full Stack Web Development</h5>
+                            
+                            <div class="instructor">
+                                    Mary Sue
+                                </div>
+                            
+                                <div class="progress-bar first"></div>  
+                                
+                                
+                                <div class="completed-percentage">
+                                50% Completed</div>
+                            
+                            </div> 
+                        </div>   
+                        
+                        <div class="course-card">
+                            <div class="course-logo">
+                                <img src="python.jpg" alt=""></div>
+                            <div class="course-content">
+                                <h5>Python Programming for Beginners</h5>
+                            
+                                <div class="instructor">
+                                    Mary Sue
+                                </div>
+                            
+                                <div class="progress-bar second"></div>
+
+                                <div class="completed-percentage">
+                                    90% Completed</div>
+                            </div>
+                    
+                        </div> 
+                        
+                     </div> 
+                    <a href="#" class="btn">View All </a>
+                                         
+            </div>
+
+            <!-- calendar grid item  -->
+            <div class="grid-item calendar">
+                <h3 class="heading"> Calendar </h3> <br>
+                            <!-- <iframe src="https://calendar.google.com/calendar/embed?height=200&wkst=1&bgcolor=%23616161&ctz=Asia%2FKolkata&showPrint=0&showTabs=0&showTitle=0&showNav=1&showCalendars=1&showTz=0" style="border:solid 1px #777" width="335" height="200" frameborder="0" scrolling="no"></iframe> -->
+                            <div class="month-calendar">
+                            <div class="month">
+                                <ul>
+                                  <li class="prev">&#10094;</li>
+                                  <li class="next">&#10095;</li>
+                                  <li>August<br><span style="font-size:18px">2021</span></li>
+                                </ul>
+                              </div>
+                              
+                              <ul class="weekdays">
+                                <li>Mo</li>
+                                <li>Tu</li>
+                                <li>We</li>
+                                <li>Th</li>
+                                <li>Fr</li>
+                                <li>Sa</li>
+                                <li>Su</li>
+                              </ul>
+                              
+                              <ul class="days">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li><span class="active">5</span></li>
+                                <li>6</li>
+                                <li>7</li>
+                              </ul>
+            </div> 
+        </div>
+
+            <!-- progress grid item  -->
+            <div class="grid-item progress"> 
+                <h3 class="heading"> Progress </h3>
+
+                <div class="progress-contents">
+                <div class="spinner"><i class="fa-solid fa-spinner fa-spin-pulse"></i></div>
+                <div class="progress-for-tasks">
+
+                    <div class="completed"> <i class="fa-solid fa-circle"></i> <span class="percentage"> <b>90% </b>Completed</span> </div>
+                    <div class="in-progress"> <i class="fa-solid fa-circle-half-stroke"></i><span class="percentage"> <b> 50%</b> In Progress</span></div>
+                    <div class="to-start"> <i class="fa-regular fa-circle"></i> <span class="percentage"> <b>10% </b>To Start</span> </div>
+                 </div>
+
+                </div>
+            </div>
+                    
+            <!-- learning hours grid item  -->
+            <div class="grid-item learning-hours"> 
+                <h3 class="heading"> Learning Hours</h3>
+                <i class="fa-regular fa-clock"></i>
+
+                <div class="time-spent-learning">
+                    <h4>3h37m This Week</h4>
+                    <div class="progress-bar third"></div>
+                    <a href="#" class="view-more btn">View more </a>
+
+                </div>
+            </div>
+
+            <!-- tasks grid item  -->
+            <div class="grid-item tasks"> 
+
+                <div class="todo-box">
+                    <h3 class="heading">Tasks </h3>
+                    <div class="task">
+                        <input type="checkbox" id="task1">
+                        <div class="task-details">
+                            <label class="task-title" for="task1">Task 1 Title</label>
+                            <span class="course-name">Course Name 1</span>
+                            <span class="task-time">Time: 10:00 AM</span>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox" id="task2">
+                        <div class="task-details">
+                            <label class="task-title" for="task2">Task 2 Title</label>
+                            <span class="course-name">Course Name 2</span>
+                            <span class="task-time">Time: 2:30 PM</span>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox" id="task3">
+                        <div class="task-details">
+                            <label class="task-title" for="task3">Task 3 Title</label>
+                            <span class="course-name">Course Name 3</span>
+                            <span class="task-time">Time: 4:45 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- achievements grid item  -->
+            <div class="grid-item achievements"> 
+                <h3  class="heading">Achievements</h3>
+                <i class="fa-solid fa-medal"></i>
+
+                <div class="certificate">
+                    <h5>Course Completion Certficate</h5>
+                    <p>Introduction to C Programming</p>
+                    <small>10th July 2023</small>
+                </div>
+            </div>
+
+            <!-- explore grid item  -->
+            <div class="grid-item explore"> 
+                <h3  class="heading">Explore Courses</h3>
+                <div class="course-card explore-card">
+                    <div class="course-logo">
+                        <img src="uiux.jpg" alt=""></div>
+                    <div class="course-content">
+                        <h5>UI/UX Design</h5>
+                    
+                    <div class="instructor">
+                            Mary Sue
+                        </div>
+
+                        <a href="#" class="view-course btn">View Course </a>
+                    
+                    </div> 
+                </div> 
+
+            </div>
+
+            
+     </div>
+
+</body>
+</html>
